@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyOrbit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hamburger Menu -->
+  <div id="hamburger">&#9776;</div>
+  <nav id="sideMenu" class="hidden">
+    <ul>
+      <li onclick="showSection('home')">Home</li>
+      <li onclick="showSection('chat')">Chat</li>
+      <li onclick="showSection('motivation')">Motivation</li>
+      <li onclick="showSection('about')">About</li>
+    </ul>
+  </nav>
+
+  <!-- Main Sections -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="active">
+      <div class="logo-container">
+        <div class="growth-graph">📈</div>
+        <h1 class="logo">StudyOrbit 📚🚀</h1>
+      </div>
+      <div class="dashboard">
+        <p>Welcome to your study dashboard!</p>
+        <p>Track progress, plan homework, and stay motivated.</p>
+      </div>
+    </section>
+
+    <!-- Chat -->
+    <section id="chat">
+      <div class="chat-window" id="chatWindow"></div>
+      <div class="chat-input">
+        <input type="text" id="chatMessage" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </section>
+
+    <!-- Motivation -->
+    <section id="motivation">
+      <h2>Daily Motivation</h2>
+      <p id="quoteBox">“Success is the sum of small efforts repeated daily.”</p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About StudyOrbit</h2>
+      <p><strong>Created by:</strong> Shivam Kumar</p>
+      <p>"Built by a student, for students."</p>
+    </section>
+  </main>
+
+  <!-- Bottom Navigation -->
+  <footer>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('chat')">Chat</button>
+    <button onclick="showSection('motivation')">Motivation</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
